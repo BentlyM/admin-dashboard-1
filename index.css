@@ -1,3 +1,8 @@
+:root {
+    --color-for-node: white;
+    --shadow-for-node: 0 3px 10px rgba(26, 25, 25, 0.205);
+}
+
 * {
     margin: 0%;
     padding: 0%;
@@ -18,7 +23,7 @@ body {
 
 .header {
     display: grid;
-    background-color: white;
+    background-color: var(--color-for-node);
     grid-template-rows: 1fr 1fr;
     box-shadow: 0 3px 10px rgba(26, 25, 25, 0.205);
 }
@@ -102,3 +107,36 @@ body {
     align-items: center;
     gap: 2vw;
 }
+
+#nav-buttons > button {
+    font-size: medium;
+}
+
+/* prob for the main-content functionality */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+div.main-content > div h3 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: repeat(3 , 1fr);
+    background-color: var(--color-for-node);
+    border-radius: 8px;
+    box-shadow: var(--shadow-for-node);
+    width: 13vw;
+    height: 16rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#test-1 {
+    grid-row-start: span 2;
+}
+
