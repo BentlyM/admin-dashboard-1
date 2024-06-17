@@ -12,11 +12,15 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
     height: 100%;
 }
 
 .header {
     display: grid;
+    background-color: white;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0 3px 10px rgba(26, 25, 25, 0.205);
 }
 
 /* side bar content */
@@ -49,4 +53,26 @@ body {
     padding-right: 3%;
     width: 3vw;
     object-fit: cover;
+}
+
+/* Nav Bar stuff */
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.search > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+#search-bar {
+    background-color: #f3f4f6;
+    border: none;
+    border-radius: 15px;
+    width: 65%;
+    height: 40%;
 }
