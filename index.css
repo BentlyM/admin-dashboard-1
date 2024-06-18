@@ -140,15 +140,30 @@ div.main-content > div h3 {
 
 /* main content project cards */
 
-.content-cards {
+.content-wrap {
     width: 100%;
     height: calc(100% - 1rem - 2rem);
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
 }
 
-.content-cards > div {
+.content-wrap > div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.content-card {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--color-for-node);
+    box-shadow: var(--shadow-for-node);
+    border-radius: 8px;
+    width: 70%;
+    height: 60%;
+    border-left: 6px solid #fbbf24;
+    & {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
 }
