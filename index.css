@@ -138,7 +138,17 @@ div.main-content > div h3 {
     margin: 1rem;
 }
 
-#test-1 {
-    grid-row-start: span 2;
+/* main content project cards */
+
+.content-cards {
+    width: 100%;
+    height: calc(100% - 1rem - 2rem);
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
 }
 
+.content-cards > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
